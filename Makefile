@@ -1,7 +1,7 @@
 ## help: Show makefile commands
 .PHONY: help
 help: Makefile
-	@echo "---- Project: Imputes/fdlr ----"
+	@echo "---- Project: Imputes/godl ----"
 	@echo " Usage: make COMMAND"
 	@echo
 	@echo " Management Commands:"
@@ -17,7 +17,7 @@ GOFLAGS ?= -trimpath
 ## build: Build project
 .PHONY: build
 build:
-	@go build $(GOFLAGS) -o ./bin ./cmd/fdlr
+	@go build $(GOFLAGS) -o ./bin ./cmd/godl
 
 
 ## deps: Ensures fresh go.mod and go.sum

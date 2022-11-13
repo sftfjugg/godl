@@ -1,4 +1,4 @@
-module github.com/Imputes/fdlr
+module github.com/sftfjugg/godl
 
 go 1.16
 

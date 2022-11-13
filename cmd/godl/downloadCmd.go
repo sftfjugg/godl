@@ -5,9 +5,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/Imputes/fdlr/internal/errorHandle"
-	"github.com/Imputes/fdlr/internal/executioner"
-	"github.com/Imputes/fdlr/internal/tool"
+	"github.com/sftfjugg/godl/internal/errorHandle"
+	"github.com/sftfjugg/godl/internal/executioner"
+	"github.com/sftfjugg/godl/internal/tool"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
@@ -23,7 +23,7 @@ func init() {
 var downloadCmd = &cobra.Command{
 	Use:     "download",
 	Short:   "downloads a file from URL or file name",
-	Example: `fdlr download [-c=goroutines_count] URL`,
+	Example: `godl download [-c=goroutines_count] URL`,
 	Args:    cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		errorHandle.ExitWithError(download(args))

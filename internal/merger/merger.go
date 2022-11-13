@@ -6,7 +6,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/Imputes/fdlr/internal/tool"
+	"github.com/sftfjugg/godl/internal/tool"
 
 	"github.com/cheggaaa/pb"
 	"github.com/pkg/errors"

@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/Imputes/fdlr/internal/downloader"
-	"github.com/Imputes/fdlr/internal/merger"
-	"github.com/Imputes/fdlr/internal/tool"
+	"github.com/sftfjugg/godl/internal/downloader"
+	"github.com/sftfjugg/godl/internal/merger"
+	"github.com/sftfjugg/godl/internal/tool"
 
 	"github.com/pkg/errors"
 )

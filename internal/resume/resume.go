@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Imputes/fdlr/internal/tool"
+	"github.com/sftfjugg/godl/internal/tool"
 
 	"github.com/pkg/errors"
 )

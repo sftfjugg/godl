@@ -2,8 +2,8 @@ env:
   - CGO_ENABLED=0
 
 builds:
-  - main: ./cmd/fdlr
-    binary: fdlr
+  - main: ./cmd/godl
+    binary: godl
     goos:
       - darwin
       - linux

@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	SaveFolder string = ".fdlr/"
+	SaveFolder string = ".godl/"
 	stateFile  string = "state.yaml"
 )
 

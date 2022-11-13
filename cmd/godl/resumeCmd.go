@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/Imputes/fdlr/internal/errorHandle"
-	"github.com/Imputes/fdlr/internal/executioner"
-	"github.com/Imputes/fdlr/internal/resume"
-	"github.com/Imputes/fdlr/internal/tool"
+	"github.com/sftfjugg/godl/internal/errorHandle"
+	"github.com/sftfjugg/godl/internal/executioner"
+	"github.com/sftfjugg/godl/internal/resume"
+	"github.com/sftfjugg/godl/internal/tool"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
@@ -17,7 +17,7 @@ func init() {
 var resumeCmd = &cobra.Command{
 	Use:     "resume",
 	Short:   "resume downloading task",
-	Example: `fdlr resume URL or file name`,
+	Example: `godl resume URL or file name`,
 	Args:    cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		errorHandle.ExitWithError(resumeTask(args))
