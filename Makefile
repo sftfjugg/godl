@@ -1,7 +1,7 @@
 ## help: Show makefile commands
 .PHONY: help
 help: Makefile
-	@echo "---- Project: Imputes/godl ----"
+	@echo "---- Project: sftfjugg/godl ----"
 	@echo " Usage: make COMMAND"
 	@echo
 	@echo " Management Commands:"
@@ -17,7 +17,7 @@ GOFLAGS ?= -trimpath
 ## build: Build project
 .PHONY: build
 build:
-	@go build $(GOFLAGS) -o ./bin ./cmd/godl
+	@go build $(GOFLAGS) -o ./bin/ ./cmd/godl
 
 
 ## deps: Ensures fresh go.mod and go.sum
@@ -30,11 +30,11 @@ deps:
 ## lint: Run golangci-lint check
 .PHONY: lint
 lint:
-	@if [ ! -f ./bin/golangci-lint ]; then \
+	@if [ ! where golangci-lint ]; then \
 		curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s $(GOLANGCI_LINT_VERSION); \
 	fi;
 	@echo "golangci-lint checking..."
-	@./bin/golangci-lint run --deadline=30m --disable=govet --disable=ineffassign --disable=unused
+	@golangci-lint run --deadline=30m
 
 
 ## format: Formats Go code
